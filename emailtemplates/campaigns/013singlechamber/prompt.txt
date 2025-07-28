@@ -1,0 +1,24 @@
+I want to make an html email template with the following details
+ - The width of the template is 600 px
+ - The template is fully responsive
+ - Theme colors are #7CBB00	and #00A1F1
+ - The template has font family arial, sans-serif
+ - Use images from https://placehold.jp/
+ - The template should be made only using <table> tag
+ - The template has eight rows
+ - The first row contains the following with two columns
+     - First column with left align has logo and company name
+     - The logo has size of 50px x 50px
+     - Second column has social media icons of Facebook, LinkedIn and Youtube
+- The second row has one column with heading center align
+- The third row contains a horizontal strip with the below description
+    - Height of 10px
+    - Width of 70% with center align
+    - Left and right sides of the strip has inclination towards left.
+- The fourth row has Hero Image with the size 600px x 250 px.
+- The fifth row has Heading (h3) and a paragraph of description
+- The sixth row contains a horizontal bar of silver color
+- The seventh row has two columns with the following details
+   - Two columns are responsive with thumbnails of sizes 250 x 150 with Heading and paragraph.
+- The eighth row is a footer with the following details
+   -  Company name, Email address, Mobile No., Branches, Social media icons, and copy right statements.

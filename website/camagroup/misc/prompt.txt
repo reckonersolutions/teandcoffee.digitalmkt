@@ -1,0 +1,65 @@
+Create a fully responsive HTML webpage using only <table> tags for all layout and structure. Do not use any <div>, <section>, or other layout tags. Style the entire page using the W3.CSS framework (https://www.w3schools.com/w3css/).
+
+**Project Path:** website/camagroup  
+**Image Folder:** website/camagroup/img  
+**Use placeholder images from:** https://placehold.jp/en.html  
+**Brand Color:** #7CBB00 (use for headers, highlights, borders, etc.)  
+**Page Width:** No max width — allow the layout to expand across the screen size, while remaining responsive
+
+**Page Purpose:**  
+To present Reckoner Solutions as the official sales representative of Cama Group in UAE & Saudi Arabia for coffee and tea packaging machinery.
+
+**Sections to Include (use <table> only):**
+
+---
+
+1. **Header**  
+   - Table with two cells:  
+     - Left: Logo (`website/camagroup/img/logo.png`)  
+     - Right: Tagline “Sales Representative of Cama Group in UAE & Saudi Arabia”  
+   - Use `w3-padding`, `w3-large`, `w3-text-white`, with brand color `#7CBB00` in background or text styling
+
+---
+
+2. **Hero Section**  
+   - Full-width banner image using:  
+     `https://placehold.jp/1200x400.png?text=Cama+Coffee+%26+Tea+Solutions`  
+   - Overlay heading: “Cama Group – Coffee & Tea Packaging Solutions”  
+   - Use `w3-display-container` and `w3-display-middle` from W3.CSS to layer text
+
+---
+
+3. **Overview Section**  
+   - Single cell with a short introductory paragraph describing Cama Group’s capabilities in the coffee and tea packaging industry  
+   - Refer to: https://camagroup.com/coffee-and-tea/  
+   - Use W3.CSS classes: `w3-padding`, `w3-text-grey`, and optionally add a top border in `#7CBB00`
+
+---
+
+4. **Solutions Table**  
+   - Multiple rows, each with two cells:  
+     - Left: Placeholder image (e.g., `https://placehold.jp/200x120.png?text=Cartoning`)  
+     - Right: Text description (e.g., “Integrated cartoning systems for pods, sachets, and tea bags”)  
+   - Use `w3-hover-shadow`, `w3-padding`, and alternate row backgrounds for contrast
+
+---
+
+5. **Footer Section**  
+   - Company info: Reckoner Solutions – UAE & Saudi Arabia  
+   - Placeholder contact info:  
+     - Email: info@reckoner.solutions  
+     - Phone: +971 55 633 1417  
+   - Social media icons (linked to `#`):  
+     - Facebook: `https://placehold.jp/30x30.png?text=FB`  
+     - LinkedIn: `https://placehold.jp/30x30.png?text=IN`  
+     - Instagram: `https://placehold.jp/30x30.png?text=IG`  
+   - Use `w3-center`, `w3-small`, and style separator lines or headings with brand color `#7CBB00`
+
+---
+
+**Other Requirements:**  
+- The full layout must use only <table> tags  
+- All styling via inline CSS or W3.CSS classes  
+- Fully responsive on all devices: desktops, tablets, and smartphones  
+- No CTA button or contact form  
+- All images must have descriptive `alt` tags  

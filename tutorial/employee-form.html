@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="employeeApp">
+<head>
+  <meta charset="UTF-8">
+  <title>Employee Form</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-controller="EmployeeController" class="w3-container">
+
+  <div class="w3-card-4 w3-light-grey w3-margin" style="max-width:500px;">
+    <div class="w3-container w3-blue">
+      <h2>Employee Form</h2>
+    </div>
+    <form class="w3-container" name="empForm" ng-submit="saveEmployee()">
+      <p>
+        <label>Name</label>
+        <input class="w3-input" type="text" ng-model="employee.name" required>
+      </p>
+      <p>
+        <label>Email</label>
+        <input class="w3-input" type="email" ng-model="employee.email" required>
+      </p>
+      <p>
+        <label>Department</label>
+        <select class="w3-select" ng-model="employee.department" required>
+          <option value="" disabled selected>Choose department</option>
+          <option ng-repeat="dept in departments" value="{{dept}}">{{dept}}</option>
+        </select>
+      </p>
+      <p>
+        <label>Joining Date</label>
+        <input class="w3-input" type="date" ng-model="employee.joiningDate" required>
+      </p>
+      <p>
+        <button class="w3-button w3-green" type="submit" ng-disabled="empForm.$invalid">Save</button>
+      </p>
+    </form>
+  </div>
+
+  <div class="w3-card-4 w3-margin" style="max-width:500px;" ng-if="saved">
+    <div class="w3-container w3-teal">
+      <h3>Employee Data (Record Format)</h3>
+    </div>
+    <div class="w3-container">
+      <table class="w3-table w3-bordered w3-small">
+        <tr>
+          <th>Field</th>
+          <th>Value</th>
+        </tr>
+        <tr>
+          <td>Name</td>
+          <td>{{employee.name}}</td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td>{{employee.email}}</td>
+        </tr>
+        <tr>
+          <td>Department</td>
+          <td>{{employee.department}}</td>
+        </tr>
+        <tr>
+          <td>Joining Date</td>
+          <td>{{formatDate(employee.joiningDate)}}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    angular.module('employeeApp', [])
+      .controller('EmployeeController', function($scope) {
+        $scope.departments = ['HR', 'Sales', 'Development', 'Marketing'];
+        $scope.employee = {
+          name: '',
+          email: '',
+          department: '',
+          joiningDate: ''
+        };
+        $scope.saved = false;
+
+        $scope.saveEmployee = function() {
+          $scope.saved = true;
+        };
+
+        $scope.formatDate = function(dateStr) {
+          if (!dateStr) return '';
+          var d = new Date(dateStr);
+          var day = (d.getDate()<10?'0':'') + d.getDate();
+          var month = (d.getMonth()+1<10?'0':'') + (d.getMonth()+1);
+          var year = d.getFullYear();
+          return day + '/' + month + '/' + year;
+        };
+      });
+  </script>
+</body>
+</html> 

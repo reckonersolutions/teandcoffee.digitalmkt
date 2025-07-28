@@ -1,0 +1,45 @@
+/* Custom styles for BR Architects template */
+body {
+    font-family: Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.w3-display-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Make the header image more responsive */
+header img {
+    min-height: 400px;
+    object-fit: cover;
+}
+
+/* Improve form styling */
+.w3-input {
+    margin-bottom: 8px;
+}
+
+/* Hover effects */
+.w3-button:hover {
+    color: #000!important;
+    background-color: #ccc!important;
+}
+
+/* Improve spacing for project cards */
+.w3-display-container {
+    margin-bottom: 16px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .w3-hide-small {
+        display: none!important;
+    }
+    
+    header img {
+        min-height: 300px;
+    }
+} 

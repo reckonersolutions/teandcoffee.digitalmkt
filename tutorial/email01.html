@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CAMA Group Promotion Email</title>
+  <style>
+    /* Reset */
+    body, p, h1, h2, h3, ul {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #333333;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+      width: 100% !important;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    a {
+      color: #7CBB00;
+      text-decoration: none;
+    }
+    /* Container */
+    .email-container {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      border: 1px solid #dddddd;
+    }
+    /* Header */
+    .header {
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #dddddd;
+    }
+    .logo {
+      width: 80px;
+      height: 80px;
+      margin-right: 15px;
+      flex-shrink: 0;
+    }
+    .company-info {
+      font-size: 14px;
+      color: #555555;
+    }
+    /* Hero Section */
+    .hero {
+      background-color: #f7f7f7;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      color: #7CBB00;
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 16px;
+      color: #555555;
+      margin-bottom: 0;
+    }
+    /* Product Gallery */
+    .gallery {
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    .product {
+      flex: 1 1 calc(33.333% - 10px);
+      box-sizing: border-box;
+      text-align: center;
+    }
+    .product img {
+      width: 100%;
+      max-width: 180px;
+      height: auto;
+      border-radius: 4px;
+      border: 1px solid #cccccc;
+    }
+    .product-title {
+      margin-top: 8px;
+      font-weight: bold;
+      font-size: 14px;
+      color: #333333;
+    }
+    /* Content Section */
+    .content {
+      padding: 20px;
+      font-size: 15px;
+      line-height: 1.5;
+      color: #444444;
+    }
+    .content ul {
+      list-style-type: disc;
+      margin-left: 20px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .content li {
+      margin-bottom: 6px;
+    }
+    /* Benefits Section */
+    .benefits {
+      background-color: #f7f7f7;
+      padding: 20px;
+      font-size: 15px;
+      color: #444444;
+    }
+    .benefits ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .benefits li {
+      margin-bottom: 10px;
+      padding-left: 24px;
+      position: relative;
+    }
+    .benefits li::before {
+      content: "✔";
+      color: #7CBB00;
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-weight: bold;
+    }
+    /* CTA Buttons */
+    .cta {
+      padding: 20px;
+      text-align: center;
+    }
+    .btn-primary, .btn-secondary {
+      font-size: 16px;
+      padding: 12px 30px;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      margin: 8px 10px 0 10px;
+      min-width: 150px;
+      font-weight: bold;
+    }
+    .btn-primary {
+      background-color: #7CBB00;
+      color: white;
+      border: none;
+    }
+    .btn-primary:hover {
+      background-color: #6aa000;
+    }
+    .btn-secondary {
+      background-color: transparent;
+      color: #7CBB00;
+      border: 2px solid #7CBB00;
+    }
+    .btn-secondary:hover {
+      background-color: #7CBB00;
+      color: white;
+    }
+    /* Footer */
+    .footer {
+      background-color: #eeeeee;
+      padding: 15px 20px;
+      font-size: 13px;
+      color: #555555;
+      text-align: center;
+      border-top: 1px solid #dddddd;
+    }
+    .footer a {
+      color: #7CBB00;
+      text-decoration: none;
+    }
+    /* Responsive */
+    @media only screen and (max-width: 620px) {
+      .gallery {
+        flex-direction: column;
+        gap: 20px;
+      }
+      .product {
+        flex: 1 1 100%;
+      }
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .company-info {
+        margin-top: 10px;
+      }
+      .btn-primary, .btn-secondary {
+        width: 100%;
+        max-width: 300px;
+        margin: 8px auto 0 auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <table role="presentation" class="email-container" cellpadding="0" cellspacing="0" width="100%" align="center">
+    <tr>
+      <td>
+        <!-- Header -->
+        <div class="header">
+          <img src="https://via.placeholder.com/80" alt="Reckoner Solutions Logo" class="logo" />
+          <div class="company-info">
+            <strong>Reckoner Solutions</strong><br />
+            Email: <a href="mailto:hussaini@reckoner.solutions">hussaini@reckoner.solutions</a><br />
+            Phone: +971 55 633 1417 | +91 91605 74 788
+          </div>
+        </div>
+
+        <!-- Hero Section -->
+        <div class="hero">
+          <h1>Revolutionize Your Packaging with CAMA Group</h1>
+          <p>Advanced Automation for the Food, Beverage, Personal Care &amp; Pharma Industries</p>
+        </div>
+
+        <!-- Product Image Gallery -->
+        <div class="gallery" role="list">
+          <div class="product" role="listitem">
+            <img src="https://via.placeholder.com/300x200?text=Monoblock+Packaging+System" alt="Monoblock Packaging System IF Series" />
+            <div class="product-title">Monoblock Packaging System (IF Series)</div>
+          </div>
+          <div class="product" role="listitem">
+            <img src="https://via.placeholder.com/300x200?text=Robotic+Case+Packers" alt="Robotic Case Packers" />
+            <div class="product-title">Robotic Case Packers</div>
+          </div>
+          <div class="product" role="listitem">
+            <img src="https://via.placeholder.com/300x200?text=Cartoning+Machines" alt="Cartoning Machines" />
+            <div class="product-title">Cartoning Machines</div>
+          </div>
+        </div>
+
+        <!-- Main Content Section -->
+        <div class="content">
+          <p>We at <strong>Reckoner Solutions</strong> are proud to be the authorized representative of <strong>CAMA Group</strong> in Saudi Arabia and UAE. Our partnership brings you cutting-edge packaging machinery tailored for your industry needs.</p>
+          <ul>
+            <li>Modular Cartoning Systems</li>
+            <li>Robotic Case Packers</li>
+            <li>Turnkey End-of-Line Packaging Solutions</li>
+            <li>Augmented Reality Support Tools</li>
+          </ul>
+        </div>
+
+        <!-- Benefits Section -->
+        <div class="benefits">
+          <ul>
+            <li>Industry 4.0 Smart Integration</li>
+            <li>High-Speed Automation</li>
+            <li>Scalable and Custom-Built Machines</li>
+            <li>Expert Local Support &amp; After Sales</li>
+          </ul>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="cta">
+          <a href="mailto:hussaini@reckoner.solutions?subject=Request%20for%20CAMA%20Product%20Demo" class="btn-primary" target="_blank" rel="noopener">Request a Free Demo</a>
+          <a href="#" class="btn-secondary" target="_blank" rel="noopener">Download Brochure</a>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+          Reckoner Solutions<br />
+          Email: <a href="mailto:hussaini@reckoner.solutions">hussaini@reckoner.solutions</a> | Phone: +971 55 633 1417 | +91 91605 74 788<br />
+          Authorized Representative of CAMA Group in Saudi Arabia &amp; UAE
+        </div>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

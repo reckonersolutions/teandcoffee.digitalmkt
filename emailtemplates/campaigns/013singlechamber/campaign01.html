@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Template</title>
+    <style>
+        /* Basic reset for email clients */
+        body, table, td, a {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+        table, td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+        img {
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+            -ms-interpolation-mode: bicubic;
+        }
+        /* Responsive styles */
+        @media only screen and (max-width: 600px) {
+            .responsive-table {
+                width: 100% !important;
+            }
+            .responsive-column {
+                display: block !important;
+                width: 100% !important;
+                text-align: center !important;
+            }
+            .responsive-image {
+                width: 100% !important;
+                height: auto !important;
+            }
+            .responsive-text {
+                text-align: center !important;
+            }
+            .responsive-padding {
+                padding: 10px !important;
+            }
+            .responsive-strip {
+                width: 90% !important;
+            }
+        }
+    </style>
+</head>
+<body style="margin: 0; padding: 0; background-color: #f4f4f4;">
+    <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" class="responsive-table" style="background-color: #ffffff; border-collapse: collapse;">
+        <!-- Row 1: Logo and Social Media Icons -->
+        <tr>
+            <td style="padding: 20px 0;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td align="left" width="50%" class="responsive-text" style="padding: 0 20px;">
+                            <img src="https://placehold.jp/50x50.png" alt="Company Logo" style="vertical-align: middle; max-width: 100%; height: auto;">
+                            <span style="color: #7CBB00; font-size: 18px; font-weight: bold;">Company Name</span>
+                        </td>
+                        <td align="right" width="50%" class="responsive-text" style="padding: 0 20px;">
+                            <a href="#"><img src="https://placehold.jp/30x30.png?text=F" alt="Facebook" style="margin: 0 5px; max-width: 100%; height: auto;"></a>
+                            <a href="#"><img src="https://placehold.jp/30x30.png?text=L" alt="LinkedIn" style="margin: 0 5px; max-width: 100%; height: auto;"></a>
+                            <a href="#"><img src="https://placehold.jp/30x30.png?text=Y" alt="Youtube" style="margin: 0 5px; max-width: 100%; height: auto;"></a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- Row 2: Heading -->
+        <tr>
+            <td align="center" style="padding: 20px 0;" class="responsive-text">
+                <h1 style="color: #00A1F1; font-size: 24px; margin: 0;">Welcome to Our Newsletter</h1>
+            </td>
+        </tr>
+
+        <!-- Row 3: Horizontal Strip -->
+        <tr>
+            <td align="center" style="padding: 20px 0;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" width="70%" class="responsive-strip">
+                    <tr>
+                        <td style="background-color: #7CBB00; height: 10px; transform: skewX(-20deg);"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- Row 4: Hero Image -->
+        <tr>
+            <td>
+                <img src="https://placehold.jp/600x250.png" alt="Hero Image" class="responsive-image" style="display: block; width: 100%; height: auto;">
+            </td>
+        </tr>
+
+        <!-- Row 5: Heading and Paragraph -->
+        <tr>
+            <td style="padding: 20px;" class="responsive-padding">
+                <h3 style="color: #00A1F1; font-size: 20px; margin: 0;">Our Latest Update</h3>
+                <p style="color: #333333; font-size: 16px; line-height: 1.5;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel justo nec nisi tincidunt tincidunt. Sed euismod, nisl nec aliquam tincidunt, nunc nisl aliquam nisl, nec aliquam nisl nunc nec nisl.</p>
+            </td>
+        </tr>
+
+        <!-- Row 6: Horizontal Bar -->
+        <tr>
+            <td style="padding: 20px 0;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td style="background-color: silver; height: 2px;"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- Row 7: Two Columns with Thumbnails -->
+        <tr>
+            <td style="padding: 20px;" class="responsive-padding">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td class="responsive-column" width="50%" style="padding: 10px;">
+                            <img src="https://placehold.jp/250x150.png" alt="Thumbnail 1" class="responsive-image" style="display: block; width: 100%; height: auto;">
+                            <h4 style="color: #00A1F1; font-size: 18px; margin: 10px 0;">Heading 1</h4>
+                            <p style="color: #333333; font-size: 14px; line-height: 1.5;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </td>
+                        <td class="responsive-column" width="50%" style="padding: 10px;">
+                            <img src="https://placehold.jp/250x150.png" alt="Thumbnail 2" class="responsive-image" style="display: block; width: 100%; height: auto;">
+                            <h4 style="color: #00A1F1; font-size: 18px; margin: 10px 0;">Heading 2</h4>
+                            <p style="color: #333333; font-size: 14px; line-height: 1.5;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- Row 8: Footer -->
+        <tr>
+            <td style="background-color: #7CBB00; padding: 20px; text-align: center;" class="responsive-padding">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td style="color: #ffffff; font-size: 14px;">
+                            <p style="margin: 0;">Company Name</p>
+                            <p style="margin: 0;">Email: info@company.com | Mobile: +123 456 7890</p>
+                            <p style="margin: 0;">Branches: New York, London, Tokyo</p>
+                            <p style="margin: 10px 0;">
+                                <a href="#"><img src="https://placehold.jp/30x30.png?text=F" alt="Facebook" style="margin: 0 5px; max-width: 100%; height: auto;"></a>
+                                <a href="#"><img src="https://placehold.jp/30x30.png?text=L" alt="LinkedIn" style="margin: 0 5px; max-width: 100%; height: auto;"></a>
+                                <a href="#"><img src="https://placehold.jp/30x30.png?text=Y" alt="Youtube" style="margin: 0 5px; max-width: 100%; height: auto;"></a>
+                            </p>
+                            <p style="margin: 0; font-size: 12px;">&copy; 2023 Company Name. All rights reserved.</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

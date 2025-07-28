@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="employeeRegApp">
+<head>
+  <meta charset="UTF-8">
+  <title>Employee Registration</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-controller="EmployeeRegController" class="w3-container">
+
+  <div class="w3-card-4 w3-light-grey w3-margin" style="max-width:500px;">
+    <div class="w3-container w3-teal">
+      <h2>Employee Registration</h2>
+    </div>
+    <form class="w3-container" name="regForm" ng-submit="registerEmployee()">
+      <p>
+        <label>Name</label>
+        <input class="w3-input" type="text" ng-model="employee.name" required>
+      </p>
+      <p>
+        <label>Email</label>
+        <input class="w3-input" type="email" ng-model="employee.email" required>
+      </p>
+      <p>
+        <label>Department</label>
+        <select class="w3-select" ng-model="employee.department" required>
+          <option value="" disabled selected>Select department</option>
+          <option ng-repeat="dept in departments" value="{{dept}}">{{dept}}</option>
+        </select>
+      </p>
+      <p>
+        <label>Joining Date</label>
+        <input class="w3-input" type="date" ng-model="employee.joiningDate" required>
+      </p>
+      <p>
+        <label>Salary</label>
+        <input class="w3-input" type="number" ng-model="employee.salary" min="0" required>
+      </p>
+      <p>
+        <button class="w3-button w3-teal" type="submit" ng-disabled="regForm.$invalid">Register</button>
+      </p>
+    </form>
+    <div class="w3-container w3-pale-green w3-margin" ng-if="submitted">
+      <h4>Employee Records</h4>
+      <table class="w3-table w3-bordered w3-white" style="max-width:100%;">
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Department</th>
+          <th>Joining Date</th>
+          <th>Salary (INR)</th>
+          <th>Actions</th>
+        </tr>
+        <tr ng-repeat="emp in employees track by $index">
+          <td>{{emp.name}}</td>
+          <td>{{emp.email}}</td>
+          <td>{{emp.department}}</td>
+          <td>{{emp.joiningDate | date:'yyyy-MM-dd'}}</td>
+          <td>{{emp.salary | currency:'₹':0}}</td>
+          <td>
+            <button class="w3-button w3-blue w3-small" ng-click="editEmployee($index)">Edit</button>
+            <button class="w3-button w3-red w3-small" ng-click="deleteEmployee($index)">Delete</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    angular.module('employeeRegApp', [])
+      .controller('EmployeeRegController', function($scope) {
+        $scope.departments = ["HR", "Sales", "IT", "Finance", "Marketing"];
+        $scope.employee = {};
+        $scope.employees = [];
+        $scope.submitted = false;
+        $scope.isEditing = false;
+        $scope.editIndex = null;
+
+        $scope.registerEmployee = function() {
+          if ($scope.isEditing && $scope.editIndex !== null) {
+            $scope.employees[$scope.editIndex] = angular.copy($scope.employee);
+          } else {
+            $scope.employees.push(angular.copy($scope.employee));
+          }
+          $scope.employee = {};
+          $scope.submitted = false;
+          $scope.isEditing = false;
+          $scope.editIndex = null;
+          if ($scope.regForm) {
+            $scope.regForm.$setPristine();
+            $scope.regForm.$setUntouched();
+          }
+        };
+
+        $scope.editEmployee = function(index) {
+          $scope.employee = angular.copy($scope.employees[index]);
+          $scope.isEditing = true;
+          $scope.editIndex = index;
+          $scope.submitted = false;
+        };
+
+        $scope.deleteEmployee = function(index) {
+          $scope.employees.splice(index, 1);
+          $scope.employee = {};
+          $scope.isEditing = false;
+          $scope.editIndex = null;
+          if ($scope.regForm) {
+            $scope.regForm.$setPristine();
+            $scope.regForm.$setUntouched();
+          }
+        };
+      });
+  </script>
+</body>
+</html> 

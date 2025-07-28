@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reckoner Solutions</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #dcdcdc;
+      margin: 0;
+      padding: 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    td {
+      vertical-align: top;
+      padding: 10px;
+    }
+    .header-contact {
+      background-color: #333;
+      color: white;
+    }
+    .header-logo {
+      background-color: #fff;
+    }
+    .menu-bar {
+      background-color: #555;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .menu-bar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+    .submenu {
+      display: none;
+      position: absolute;
+      background-color: #777;
+      z-index: 1001;
+    }
+    .menu-item:hover .submenu {
+      display: block;
+    }
+    .sidebar {
+      background-color: #f5f5f5;
+    }
+    .slideshow img {
+      width: 100%;
+      height: auto;
+    }
+    .footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+    }
+
+    /* Responsive Layout with CSS (compiled from SASS-like logic) */
+    @media (max-width: 768px) {
+      .main-content-table {
+        display: block;
+      }
+      .main-content-left,
+      .main-content-right {
+        display: block;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<table>
+  <!-- Row 1: Contact -->
+  <tr class="header-contact">
+    <td style="text-align:left;">📞 +971 55 633 1418 | +91 91605 74788</td>
+    <td style="text-align:right;">BUY / SELL Pre-Owned Machines</td>
+  </tr>
+
+  <!-- Row 2: Logo and Tagline -->
+  <tr class="header-logo">
+    <td style="text-align:left;">
+      <img src="https://placehold.jp/80x80.png" alt="Logo" style="vertical-align: middle;">
+      <span style="font-size: 24px; vertical-align: middle;">Reckoner Solutions</span>
+    </td>
+    <td style="text-align:right; font-style: italic;">Empowering Tea & Coffee Packaging</td>
+  </tr>
+
+  <!-- Row 3: Menu -->
+  <tr class="menu-bar">
+    <td colspan="2">
+      <div class="w3-bar">
+        <div class="w3-bar-item menu-item">Home</div>
+        <div class="w3-bar-item menu-item">Machines
+          <div class="submenu">
+            <div class="w3-bar-item">Single Chamber</div>
+            <div class="w3-bar-item">Double Chamber</div>
+            <div class="w3-bar-item">Overwrapping</div>
+          </div>
+        </div>
+        <div class="w3-bar-item menu-item">Material
+          <div class="submenu">
+            <div class="w3-bar-item">Filter Paper</div>
+            <div class="w3-bar-item">Thread & Wire</div>
+            <div class="w3-bar-item">Tear Tape</div>
+          </div>
+        </div>
+        <div class="w3-bar-item menu-item">Services</div>
+        <div class="w3-bar-item menu-item">Portfolio</div>
+        <div class="w3-bar-item menu-item">Contact Us</div>
+      </div>
+    </td>
+  </tr>
+
+  <!-- Row 4: Main Content -->
+  <tr>
+    <td colspan="2">
+      <table class="main-content-table" style="width:100%;">
+        <tr>
+          <!-- Left Sidebar -->
+          <td class="main-content-left" style="width:30%;">
+            <table style="width:100%;">
+              <tr>
+                <td class="sidebar">
+                  <h3>Machines</h3>
+                  <ul>
+                    <li>Single Chamber</li>
+                    <li>Double Chamber</li>
+                    <li>Overwrapping</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td class="sidebar">
+                  <h3>Materials</h3>
+                  <ul>
+                    <li>Filter Paper</li>
+                    <li>Thread & Wire</li>
+                    <li>Tear Tape</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </td>
+
+          <!-- Right Slideshow -->
+          <td class="main-content-right">
+            <div class="slideshow">
+              <img src="https://placehold.jp/800x300.png" alt="Slide 1">
+              <!-- You can add JS for automatic slideshow -->
+            </div>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <!-- Rows 5 to 9 (Empty for now, placeholder for future content) -->
+  <tr><td colspan="2">&nbsp;</td></tr>
+  <tr><td colspan="2">&nbsp;</td></tr>
+  <tr><td colspan="2">&nbsp;</td></tr>
+  <tr><td colspan="2">&nbsp;</td></tr>
+  <tr><td colspan="2">&nbsp;</td></tr>
+
+  <!-- Row 10: Footer -->
+  <tr class="footer">
+    <td colspan="2">
+      &copy; 2025 Reckoner Solutions. All rights reserved.
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

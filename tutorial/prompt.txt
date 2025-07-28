@@ -1,0 +1,6 @@
+Make a website for my company Reckoner Solutions with the below points.
+ - The website is fully responsive
+ - Theme color is #dcdcdc
+ - The template has font family arial, sans-serif
+ - Use images from https://placehold.jp/
+ - Use w3.css framework

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Template</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #F0F5FF;
+            font-family: Arial, sans-serif;
+        }
+        h1,h2,h3,h4,h5,h6,p {
+            margin: 0;
+            padding: 0;
+        }
+        .email-container {
+            width: 100%;
+            padding: 20px 0;
+            background-color: #F0F5FF;
+        }
+        .email-content {
+            width: 100%;
+            max-width: 600px;
+            background-color: #ffffff;
+            margin: auto;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .header-strip {
+            background-color: #7CBB00;
+            height: 10px;
+            width: 100%;
+        }
+        .header {
+            padding: 20px;
+            color: #333333;
+        }
+        .company-logo {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        .company-name {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333333;
+        }
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .content {
+            padding: 20px;
+            color: #333333;
+        }
+        .content h1 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .content p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .gallery {
+            width: 33.33%;
+            padding: 20px 0;
+            text-align: center;
+            
+        }        
+        
+        .gallery img {
+            width: 150px;
+            height: 150px;
+            border-radius: 5px;
+            margin: 0 5px;
+        }
+        
+        .footer {
+            padding: 20px;
+            background-color: #171a1b;
+            color: #ffffff;
+            font-size: 14px;
+            text-align: center;
+        }
+        .footer-row {
+            padding: 5px 0;
+            color: #ffffff;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .gallery {                                              
+                width: 100%;  
+                display: block;                            
+            }
+        }
+    </style>
+</head>
+<body>
+    <table class="email-container" width="100%" cellspacing="0" cellpadding="0">
+        <tr>
+            <td align="center">
+                <table class="email-content" cellspacing="0" cellpadding="0">
+                    <!-- Header Strip -->
+                    <tr>
+                        <td class="header-strip"></td>
+                    </tr>
+                    <!-- Header Section -->
+                    <tr>
+                        <td class="header">
+                            <table width="100%" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td style="width: 100%; text-align: left; padding: 10px;">
+                                        <table border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td>
+                                                    <span class="company-logo">
+                                            <img src="https://drive.google.com/thumbnail?id=1J36EXNTAxtNfu5QmGik6WNDK-M_fd7FH" alt="Logo" width="80" height="80">
+                                        </span>
+                                                </td>
+                                                <td>
+                                                <span class="company-name">Reckoner Solutions</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        
+                                        
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- Hero Image Section -->
+                    <tr>
+                        <td class="hero-image">
+                            <img src="https://drive.google.com/thumbnail?id=1JGLd2RBKkkXx_vkiwPeHTvRnZNf9rQhy" width ="600" style="max-width: 100%;" alt="Hero Image">
+                        </td>
+                    </tr>
+
+                    <!-- Content Section -->
+                    <tr>
+                        <td class="content">
+                            <h1>Welcome to Our Services</h1>
+                            <p>Your trusted partner in teabag machines and materials. We offer a wide range of products including:</p>
+                        <ul>
+                           <li>Teabag Machines</li>
+                           <li>Filter Paper</li>
+                           <li>Teabag Wire</li>
+                           <li>Teabag Thread</li>
+                           <li>Teabag Tags</li>
+                           <li>Tear Tape</li>
+                           <li>Bopp</li>
+                        </ul>
+                        <p>We also <b>buy and sell pre-owned teabag machines</b> to suit your needs.</p>
+                        </td>
+                    </tr>
+                    
+                    <!-- First Gallery Section -->
+                    <tr>
+                        <td style="text-align: center;">
+                            <table width="100%" border="0" cellspacing="0">
+                                <tr>
+                                    <td class="gallery" style="text-align: center;">
+                                        <table width="100%">
+                                            <tr>
+                                                <td style="text-align: center;"><img src="https://drive.google.com/thumbnail?id=1D8fnB6hKbQjmdwooJ5MKhEVlfYkFq-bl" alt="Filter Paper"></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align: center;"><h3>Filter Paper</h3></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align: center;">
+                                                    <p>High-quality filter paper for excellent performance in teabag manufacturing.</p><br>
+                                                </td>
+                                            </tr>
+                                        </table>                                        
+                                    </td>                    
+                                    <td class="gallery" style="text-align: center;">
+                                        <table width="100%">
+                                            <tr>
+                                                <td style="text-align: center;"><img src="https://drive.google.com/thumbnail?id=1CDUlHaSFmL43LGJmYd2-SIvrz6rsCm1x" alt="Teabag Wire"></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align: center;"><h3>Teabag Wire</h3></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align: center;">
+                                                    <p>High-quality teabag wire designed for durability and efficiency in teabag manufacturing.</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td class="gallery" style="text-align: center;">
+                                        <table width="100%">
+                                            <tr>
+                                                <td style="text-align: center;"><img src="https://drive.google.com/thumbnail?id=1CQQl_P0DtCvJigXwvJwBbRz4JqODVS0z" alt="Teabag Thread"></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align: center;"><h3>Teabag Thread</h3></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align: center;">
+                                                    <p>Strong and reliable teabag thread to ensure your teabags stay intact during use.</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                        </td>
+                    </tr>    
+                    <!-- Gallery Section - Second -->
+                    <tr>
+                        <td style="text-align: center;">
+                            <table width="100%" border="0" cellspacing="0">
+                                <tr>
+                                    <td class="gallery" style="text-align: center;">
+                                        <table width="100%">
+                                            <tr>
+                                                <td style="text-align: center;"><img src="https://drive.google.com/thumbnail?id=1CRjnwlQvG1b5CNvhCohQhLtzEyYGqDl3" alt="Teabag Tags"></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align: center;"><h3>Teabag Tags</h3></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align: center;">
+                                                    <p>Customizable teabag tags to enhance your brand's visibility and appeal.</p>
+                                                </td>
+                                            </tr>
+                                        </table>                                        
+                                    </td>                    
+                                    <td class="gallery" style="text-align: center;">
+                                        <table width="100%">
+                                            <tr>
+                                                <td style="text-align: center;"><img src="https://drive.google.com/thumbnail?id=1CL_ayklb1PoZNwvxGpRIaaU25CvqznVH" alt="Tear Tape"></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align: center;"><h3>Tear Tape</h3></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align: center;">
+                                                    <p>Easy-to-use tear tape that ensures your teabags are easy to open and use.</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td class="gallery" style="text-align: center;">
+                                        <table width="100%">
+                                            <tr>
+                                                <td style="text-align: center;"><img src="https://drive.google.com/thumbnail?id=1D0j3Y7o7_wcvrnD1Qci6f8TWUHMMOOF_" alt="Bopp"></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align: center;"><h3>Bopp</h3></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align: center;">
+                                                    <p>Durable BOPP film for packaging solutions in the tea industry.</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                        </td>
+                    </tr>                            
+                    <!-- Footer Section -->
+                    <tr>
+                        <td class="footer">
+                            <table width="100%" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td class="footer-row">
+                                        <h3>Reckoner Solutions</h3>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="footer-row">Email: hussaini@reckoner.solutions</td>
+                                </tr>
+                                <tr>
+                                    <td class="footer-row">Mobile: +971 55 633 1417 / +91 91605 74788</td>
+                                </tr>
+                                <tr>
+                                    <td class="footer-row">Branches: India, UAE</td>
+                                </tr>
+                                <tr>
+                                    <td class="footer-row">
+                                        <a href="#"><img src="https://drive.google.com/thumbnail?id=1KTvtYSF2hR75u2OZgwSJLo197TRdEyVm" alt="" width="24"></a>
+                                        <a href="#"><img src="https://drive.google.com/thumbnail?id=1JgwMe-u2BW8YJ_gd0TogIyZolYom6GUV" alt="" width="24"></a>
+								<a href="#"><img src="https://drive.google.com/thumbnail?id=1Jl-ar2TZbuF1Q523fYD3s_j2JSab30YH" alt="" width="24"></a>
+								<a href="#"><img src="https://drive.google.com/thumbnail?id=1JfbbZ2lKsLRrDpGPP6_73x46CG0xS4Gw" alt="" width="24"></a>
+								<a href="#"><img src="https://drive.google.com/thumbnail?id=1JoJ_aPJqA4CElH2Cr1WIZnp3wl46cDbu" alt="" width="24"></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="footer-row">© 2024 Reckoner Solutions. All rights reserved.</td>
+                                </tr>                                
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

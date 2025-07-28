@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Full Banner Design</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+      width: 100%;
+    }
+
+    /* LEFT SIDE */
+    .left {
+      width: 40%;
+      background-color: #7CBB00;
+      position: relative;
+      overflow: hidden;
+      padding-left: 40px;
+    }
+
+    .strip {
+      position: absolute;
+      height: 200%;
+      width: 60px;
+      transform: rotate(-64deg);
+      top: -50%;
+    }
+
+    .strip.white {
+      background-color: white;
+      left: 60%;
+    }
+
+    .strip.black {
+      background-color: black;
+      left: 65%;
+    }
+
+    .strip.green {
+      background-color: #7CBB00;
+      left: 70%;
+    }
+
+    .rotated-box {
+      position: absolute;
+      top: 40px;
+      left: 40px;
+      width: 40px;
+      height: 40px;
+      background-color: white;
+      transform: rotate(45deg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+    }
+
+    .rotated-box::after {
+      content: '';
+      width: 16px;
+      height: 16px;
+      background-color: black;
+      transform: rotate(-45deg);
+    }
+
+    .text-content {
+      position: absolute;
+      top: 140px;
+      left: 60px;
+      color: white;
+      z-index: 2;
+    }
+
+    .text-content h1 {
+      font-size: 50px;
+      line-height: 1.2;
+    }
+
+    .text-content p {
+      font-size: 18px;
+      margin-top: 20px;
+      max-width: 200px;
+      color: white;
+    }
+
+    /* RIGHT SIDE */
+    .right {
+      width: 60%;
+      background-color: white;
+      padding: 100px 80px;
+      position: relative;
+    }
+
+    .right h2 {
+      font-size: 38px;
+      font-weight: bold;
+    }
+
+    .right h2 span {
+      color: #7CBB00;
+      font-weight: bold;
+    }
+
+    .right h4 {
+      font-size: 16px;
+      margin: 10px 0 30px;
+      letter-spacing: 4px;
+    }
+
+    .info-block {
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+    }
+
+    .info-icon {
+      background-color: white;
+      border-left: 6px solid #7CBB00;
+      padding-left: 10px;
+      font-weight: bold;
+      color: black;
+    }
+
+    .info-text {
+      max-width: 400px;
+      color: #333;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    /* FOOTER LINE */
+    .footer-line {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #7CBB00;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      padding-left: 80px;
+      color: white;
+      font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      .left, .right {
+        width: 100%;
+        height: 50vh;
+      }
+      .right {
+        padding: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- LEFT SIDE -->
+    <div class="left">
+      <div class="strip white"></div>
+      <div class="strip black"></div>
+      <div class="strip green"></div>
+
+      <div class="rotated-box"></div>
+
+      <div class="text-content">
+        <h1>Lorem<br>ipsum</h1>
+        <p>Lorem ipsum dolor sit amet,</p>
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="right">
+      <h2><span>BANNER</span> DESIGN</h2>
+      <h4>YOUR TEXT HERE</h4>
+
+      <div class="info-block">
+        <div class="info-icon">Lorem<br>ipsum</div>
+        <div class="info-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.
+        </div>
+      </div>
+
+      <div class="footer-line">
+        www.yourwebsite.com
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

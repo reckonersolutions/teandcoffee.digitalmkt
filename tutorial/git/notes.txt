@@ -1,0 +1,53 @@
+Git Bash
+	Commands
+		git --version
+		git config --list
+		git config --global user.name "username"
+		git config --globlal user.email "email"
+		git init
+		git status
+		git status --short
+		git add filename
+		git add --all
+		git add -A
+		git commit -m "message"
+		git commit -a -m "message"		//Add files and commit
+		git log
+		git command -help
+		git help --all
+		SHIFT + G
+		q
+
+		git branch				//Show the list of branches
+		git branch -a				//To see all local and remote branches
+		git branch -r				//To see all remote branches
+		git branch emergency-fix		//Create new branch "emergency-fix"
+		git checkout emergency-fix		//Switch to branch "emergency-fix"	
+		git checkout -b emergency-fix		//Create and switch to new branch "emergency-fix"
+		git add -all				//Add or change the files
+		git status --short			//Check the status of "emergency-fix"
+		git commit -m "message"			//Commit the changes
+		git checkout master			//Switch to branch master
+		git merge emergency-fix			//Merge the changes made at "emergency-fix" to "master"
+		git branch -d emergency-fix		//Delete the branch "emergency-fix"
+
+
+
+		git remote -v				//Check remote repository
+		git remote add origin https://github.com/reckonersolutions/Tutorial.git		//Add a remote repository
+				
+		git fetch origin			//Get all the changes
+		git status 				//Show the status
+		git log origin/master			//Check the log at origin/master
+		git diff origin/master			//Check the differences at both local and origin
+		git merge origin/master			//Merge the local branch and the origin branch
+		git status				//Check the status
+
+		git pull origin	master			//Update local git only with one command instead of fetch/merge	
+		
+		git push --set-upstream origin master	//Push master branch to the origin
+		git push -u origin master		//Update origin/master
+
+		git clone https://github.com/w3schools-test/w3schools-test.github.io.git  //To copy a remote repository
+
+		touch .gitignore			//Files ".log" or folder "temp/" will be ignored by git

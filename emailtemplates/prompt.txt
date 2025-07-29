@@ -1,0 +1,105 @@
+
+
+### ✅ **Reusable Cursor.ai Prompt for HTML Email Template**
+
+Generate a **responsive HTML email template** using only `<table>` tags. The template must be fully compatible with **Outlook, Gmail, desktop, and mobile devices**.
+
+---
+
+#### ✅ Design Requirements:
+
+* **Maximum width:** 600px
+* **Primary brand color:** `{{ BRAND_COLOR }}`
+* Use **only inline CSS styles** (no `<style>` blocks or external stylesheets)
+* Do **not** use any frameworks like Bootstrap or W3.css
+* Use **placeholder images** from [https://placehold.jp/en.html](https://placehold.jp/en.html) where needed
+
+---
+
+#### ✅ Structure:
+
+1. **Header**
+
+   * Use the **same header layout and styling** as in the reference file:
+     `emailtemplates\camagroup\cama-group-responsive-email.html`
+
+2. **Promotional Banner**
+
+   * Use the **same promotional banner** as in the reference file:
+     `emailtemplates\camagroup\cama-group-responsive-email.html`
+
+3. **Main Content Section**
+
+   * Include a short introductory paragraph (3–4 lines of placeholder text)
+   * Highlight the following article with a title and short description:
+     `{{ ARTICLE_URL }}`
+   * Ensure this section is clean and mobile-friendly, with well-spaced layout
+
+4. **Footer**
+
+   * Use the **same footer design** as in the reference file:
+     `emailtemplates\camagroup\cama-group-responsive-email.html`
+   * Footer must include:
+
+     * Social media icon placeholders (LinkedIn, Instagram, X)
+     * Basic company contact information
+     * Unsubscribe placeholder
+     * Styled with `{{ BRAND_COLOR }}`
+
+---
+
+#### ✅ Output Instructions:
+
+* **File name:** `{{ FILE_NAME }}.html`
+* **Save to folder:** `{{ FOLDER_PATH }}`
+
+---
+
+### 🔁 Instructions for Reuse:
+
+When reusing this prompt, just replace the following:
+
+* `{{ BRAND_COLOR }}` → e.g., `#00A1F1`
+* `{{ ARTICLE_URL }}` → e.g., a new article link
+* `{{ FILE_NAME }}` → e.g., `brambati-ai-project-email`
+* `{{ FOLDER_PATH }}` → e.g., `emailtemplates\camagroup\`
+
+-----------------------------------------------------------------
+
+Here’s a **simplified reusable version** of the prompt for faster copy-paste and editing in Cursor.ai:
+
+---
+
+### 🔁 **Simplified Cursor.ai Prompt for HTML Email Template**
+
+Generate a responsive HTML email template using only `<table>` tags. It must be compatible with Outlook, Gmail, desktop, and mobile.
+
+**Specs:**
+
+* Max width: 600px
+* Brand color: `{{ #7CBB00 }}`
+* Use only **inline CSS**
+* No external stylesheets or frameworks
+* Use placeholder images from [https://placehold.jp/en.html](https://placehold.jp/en.html)
+
+**Sections:**
+
+1. **Header** – Same as in `emailtemplates\camagroup\cama-group-responsive-email.html`
+2. **Promotional Banner** – Same as in the above file
+3. **Main Content** – Short intro + feature article:
+   `{{ https://www.teaandcoffee.net/blog/35891/optimising-inventory-management/?utm_source=https%3a%2f%2fnews.bellpublishing.com%2fbellpublishinglz%2f&utm_medium=email&utm_campaign=TCTJ+Newsletter+9-01-2025&utm_term=Optimising+Inventory+Management+&utm_content=29062&gator_td=Po8TKySfPxOQIUtAeDmMdTr7Cf4jRxE3e8f%2bTPGOPIohGZ6yqhXctvIb8UfAG%2b6I5da8S3sodrUC%2ffYG6q7BJsl0zQefOrybUEhglgSjV5rtQ%2fXXL9i%2fpQ7gGRa5LDOL02J2kjPqSs7jHvmj1gYMMOHmQFuzMML3UntpVRVV2P4%3d }}`
+4. **Footer** – Same as in the above file
+
+**Save as:** `{{ invmanagement }}.html`
+**Save to folder:** `{{ D:\Reckoner Solutions\02 Tea & Coffee Business\Digital Marketing\reckoner\emailtemplates\camagroup }}`
+
+---
+
+This version is quick to use and edit. Just replace:
+
+* `{{ BRAND_COLOR }}`
+* `{{ ARTICLE_URL }}`
+* `{{ FILE_NAME }}`
+* `{{ FOLDER_PATH }}`
+
+Let me know if you want me to store this as a reusable snippet for future reference.
